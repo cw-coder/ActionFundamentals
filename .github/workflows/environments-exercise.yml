@@ -13,14 +13,12 @@ jobs:
     steps:
       - name: Build It Step One
         uses: actions/checkout@v2
-        run: echo "Building"
   
   Test:
     name: Test
     runs-on: ubuntu-latest
     steps:
       - name: Test It Step One
-        uses: actions/checkout@v2
         run: echo "Testing"
   
   Load-Test:
@@ -28,7 +26,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Load test It Step One
-        uses: actions/checkout@v2
         run: echo "Load Testing"
   
   Production:
@@ -36,5 +33,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy it to Prod Step One
-        uses: actions/checkout@v2
         run: echo "Deploying to Prod"
