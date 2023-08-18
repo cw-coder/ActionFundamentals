@@ -1,0 +1,24 @@
+name: GitHub Environments Exercise
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to deploy to'
+        type: environment
+        required: true
+jobs:
+  Build:
+    name: Build It
+    runs-on: ubuntu-latest
+  Test:
+    name: Test
+    runs-on: ubuntu-latest
+  Load-Test:
+    name: Load Test
+    runs-on: ubuntu-latest
+  Production:
+    name: Prod
+    runs-on: ubuntu-latest
+    
+    
+    echo: "Testing"
